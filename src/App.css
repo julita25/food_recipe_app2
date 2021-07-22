@@ -24,6 +24,7 @@ h1 {
   text-transform: uppercase;
   margin: 4rem 2rem; /*defines upper margin*/
   margin-bottom: 0;
+  text-align: center;
 }
 
 p {
@@ -91,8 +92,8 @@ p {
 
 /*each card has a h2 title, img, url and ingredients button*/
 .recipe {
-  width: 20rem;
-  margin: 3rem;
+  max-width: 20rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: #3f3d5f;
@@ -111,7 +112,7 @@ p {
   top: 1.5rem;
   left: 2rem;
   right: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: normal;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
@@ -123,13 +124,13 @@ p {
 }
 
 .recipe a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .recipe button {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #fff;
   background-color: #be5a38;
@@ -150,5 +151,66 @@ p {
 @media only screen and (max-width: 800px) {
   p {
     width: 500px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 80%;
+  }
+  p {
+    font-size: 80%;
+    width: 200px;
+  }
+  .search {
+    max-width: 20rem;
+  }
+  .search input {
+    font-size: 15px;
+  }
+
+  .search input[type="submit"] {
+    max-width: 30%;
+  }
+
+  .recipe {
+    width: 15rem;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 90%;
+    width: 300px;
+  }
+  .search {
+    max-width: 25rem;
+  }
+  .search input {
+    font-size: 15px;
+  }
+  .search input[type="submit"] {
+    max-width: 30%;
+  }
+  .recipe {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    max-width: 450px;
+  }
+  .search {
+    width: 30rem;
+  }
+  .search input {
+    font-size: 15px;
   }
 }
